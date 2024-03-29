@@ -15,12 +15,11 @@
         android:orientation="vertical"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427"
-        tools:layout_editor_absoluteX="9dp">
+        app:layout_constraintVertical_bias="0.427">
 
         <LinearLayout
-            android:id="@+id/back_to_sign_up"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="start"
@@ -28,6 +27,7 @@
             tools:ignore="UseCompoundDrawables">
 
             <ImageView
+                android:id="@+id/signup_button"
                 android:layout_width="45dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="0dp"
@@ -60,39 +60,43 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:height="50dp"
+                android:autofillHints="emailAddress"
                 android:background="@drawable/input_bg"
                 android:hint="@string/email_hint"
-                android:autofillHints="emailAddress"
                 android:inputType="textEmailAddress"
                 android:padding="5dp"
                 android:paddingStart="16dp"
-                android:paddingEnd="2dp" />
+                android:paddingEnd="2dp"
+                android:textColorHint="#5D5D5D"
+                android:textColor="#161616" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
-                android:height="50dp"
+                android:autofillHints="password"
                 android:background="@drawable/input_bg"
                 android:hint="@string/password_hint"
-                android:autofillHints="password"
                 android:inputType="textPassword"
                 android:padding="5dp"
                 android:paddingStart="16dp"
-                android:paddingEnd="2dp" />
+                android:paddingEnd="2dp"
+                android:textColorHint="#5D5D5D"
+                android:textColor="#DEDEDE"/>
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
+                android:autofillHints="password"
                 android:background="@drawable/input_bg"
                 android:hint="@string/Re_password"
-                android:autofillHints="password"
                 android:inputType="textPassword"
                 android:padding="5dp"
                 android:paddingStart="16dp"
-                android:paddingEnd="2dp" />
+                android:paddingEnd="2dp"
+                android:textColorHint="#5D5D5D"
+                android:textColor="#DEDEDE"/>
 
 
         </LinearLayout>
@@ -110,7 +114,7 @@
                 android:backgroundTint="#000000"
                 android:letterSpacing="0.03"
                 android:padding="16dp"
-                android:text="@string/login"
+                android:text="@string/sign_up"
                 android:textColor="#ffffff"
                 android:textSize="18sp" />
 
@@ -126,7 +130,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:fontFamily="sans-serif-light"
                 android:letterSpacing="0.05"
                 android:lineHeight="20dp"
@@ -165,7 +169,7 @@
                     android:layout_height="wrap_content"
                     android:letterSpacing="0.03"
                     android:text="@string/continue_with_google"
-                    android:textColor="#ffffff"
+                    android:textColor="#161616"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -183,7 +187,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:letterSpacing="0.03"
                 android:lineHeight="20dp"
                 android:text="@string/disclaimer1"

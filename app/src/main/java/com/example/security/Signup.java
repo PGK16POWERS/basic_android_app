@@ -4,20 +4,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.view.View;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.widget.ImageView;
 
 public class Signup extends AppCompatActivity {
 
-    TextView back_to_sign_up;
+    ImageView signup_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        back_to_sign_up = findViewById(R.id.back_to_sign_up);
+        signup_button = findViewById(R.id.signup_button);
 
-        back_to_sign_up.setOnClickListener(new View.OnClickListener() {
+        signup_button.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
