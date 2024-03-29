@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">SECURITY</string>
+    <string name="intro_title">Login \n or \n Join today?</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email_hint">Email Address</string>
+    <string name="name_hint">First name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="password_hint">Password</string>
+    <string name="Re_password">Retype password</string>
+    <string name="welcome">Welcome \nEnter login details</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset">Reset</string>
+    <string name="already_signed_up">Not a member?</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="or">OR</string>
+    <string name="continue_with_google">Continue with google</string>
+    <string name="disclaimer1">By signing up or logging in, your agree to the <b>Terms</b> and <b>Conditions</b> presented.</string>
 </resources>
